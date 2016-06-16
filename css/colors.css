@@ -1,3 +1,13 @@
-.site-wrap {
-    background-color: midnightblue;
+body {
+    background-color: #151f39 !important;
+}
+.head-wrap {
+    border-bottom-color: aliceblue;
+}
+.logo-image-wrap {
+    background-color: blanchedalmond;
+    border-color: aliceblue;
+}
+.head-titles {
+    color: aliceblue;
 }

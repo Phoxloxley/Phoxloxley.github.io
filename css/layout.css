@@ -1,0 +1,45 @@
+.site-wrap {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+.head-wrap {
+    height: 100%;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+}
+@media screen and (min-width: 776px) {
+    .head-wrap {
+        height: 100px;
+    }
+}
+.logo-image-wrap {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: 0 auto;
+}
+.logo-image-wrap img {
+    position: relative;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 100%;
+    width: auto;
+}
+@media screen and (min-width: 776px) {
+    .logo-image-wrap {
+        height: 200px;
+        width: 200px;
+        margin: 0;
+    }
+}
+.head-titles {
+    text-align: center;
+}
+@media screen and (min-width: 776px) {
+    .head-titles {
+        text-align: right;
+    }
+
+}
