@@ -11,3 +11,12 @@ body {
 .head-titles {
     color: aliceblue;
 }
+.hexagon-wrap {
+    background-color: #171d25;
+}
+.container .honeycomb .hex {
+    color: #fff;
+}
+.container .honeycomb .hex .wrapper .color-1 { background: #ffbc06; }
+.container .honeycomb .hex .wrapper .color-1:before { border-right-color: #ffbc06; }
+.container .honeycomb .hex .wrapper .color-1:after { border-left-color: #ffbc06; }
