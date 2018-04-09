@@ -1,22 +1,3 @@
 body {
-    background-color: #151f39 !important;
+    background-color: #7c7c7c;
 }
-.head-wrap {
-    border-bottom-color: aliceblue;
-}
-.logo-image-wrap {
-    background-color: blanchedalmond;
-    border-color: aliceblue;
-}
-.head-titles {
-    color: aliceblue;
-}
-.hexagon-wrap {
-    background-color: #171d25;
-}
-.container .honeycomb .hex {
-    color: #fff;
-}
-.container .honeycomb .hex .wrapper .color-1 { background: #ffbc06; }
-.container .honeycomb .hex .wrapper .color-1:before { border-right-color: #ffbc06; }
-.container .honeycomb .hex .wrapper .color-1:after { border-left-color: #ffbc06; }
