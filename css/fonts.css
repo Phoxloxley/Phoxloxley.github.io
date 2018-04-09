@@ -1,0 +1,22 @@
+@import url('//fonts.googleapis.com/css?family=JoseFin+Slab:400,700');
+
+a {
+    text-decoration: none;
+}
+.st-container {
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+}
+.st-container > input,
+.st-container > a {
+    font-size: 16px;
+    line-height: 34px;
+}
+.st-container > a {
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(23,51,96,0.2);
+}
+.st-container > input:checked + a,
+.st-container > input:checked:hover + a {
+    background: #1a3c72;
+}

@@ -1,3 +1,23 @@
 body {
-    background-color: #7c7c7c;
+    background: #7c7c7c;
+}
+.st-container > a {
+    background: #26539b;
+    color: #fff;
+}
+.st-container::before {
+    background: #26539b;
+}
+.st-container > input:checked + a::after,
+.st-container > input:checked:hover + a {
+    border-bottom-color: #26539b;
+}
+.st-container > input:hover + a {
+    background: #2c62ba;
+}
+.st-container > input:hover + a::after {
+    border-bottom-color: #2c62ba;
+}
+.st-panel {
+    background: #fff;
 }
