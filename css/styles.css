@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
 }
-.st-container {
+.slide-container {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -20,8 +20,8 @@ a {
 	font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
 }
 
-.st-container > input,
-.st-container > a {
+.slide-container > input,
+.slide-container > a {
 	position: fixed;
 	top: 0px;
 	width: 20%;
@@ -31,12 +31,12 @@ a {
 	line-height: 34px;
 }
 
-.st-container > input {
+.slide-container > input {
 	opacity: 0;
 	z-index: 1000;
 }
 
-.st-container > a {
+.slide-container > a {
 	z-index: 10;
 	font-weight: 700;
 	background: #26539b;
@@ -46,7 +46,7 @@ a {
 }
 
 /* "Fix" for percentage rounding: add a background bar pseudo element with the same color like the labels */
-.st-container:before {
+.slide-container:before {
 	content: '';
 	position: fixed;
 	width: 100%;
@@ -56,33 +56,33 @@ a {
 	top: 0;
 }
 
-#st-control-1, #st-control-1 + a {
+#slide-control-1, #slide-control-1 + a {
 	left: 0;
 }
 
-#st-control-2, #st-control-2 + a {
+#slide-control-2, #slide-control-2 + a {
 	left: 20%;
 }
 
-#st-control-3, #st-control-3 + a {
+#slide-control-3, #slide-control-3 + a {
 	left: 40%;
 }
 
-#st-control-4, #st-control-4 + a {
+#slide-control-4, #slide-control-4 + a {
 	left: 60%;
 }
 
-#st-control-5, #st-control-5 + a {
+#slide-control-5, #slide-control-5 + a {
 	left: 80%;
 }
 
-.st-container > input:checked + a,
-.st-container > input:checked:hover + a{
+.slide-container > input:checked + a,
+.slide-container > input:checked:hover + a{
 	background: #2c62ba;
 }
 
-.st-container > input:checked + a:after,
-.st-container > input:checked:hover + a:after{
+.slide-container > input:checked + a:after,
+.slide-container > input:checked:hover + a:after{
 	top: 100%;
 	border: solid transparent;
 	content: '';
@@ -96,22 +96,22 @@ a {
 	margin-left: -20px;
 }
 
-.st-container > input:hover + a{
+.slide-container > input:hover + a{
 	background: #2c62ba;
 }
 
-.st-container > input:hover + a:after {
+.slide-container > input:hover + a:after {
 	border-bottom-color: #2c62ba;
 }
 
-.st-scroll,
-.st-panel {
+.slide-scroll,
+.slide-panel {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
-.st-scroll {
+.slide-scroll {
 	bottom: 0;
 	left: 0;
 	-webkit-transition: all 0.6s ease-in-out;
@@ -125,40 +125,40 @@ a {
 	-webkit-backface-visibility: hidden;
 }
 
-.st-panel{
+.slide-panel{
 	background: #7c7c7c;
 	overflow: hidden;
 }
 
-#st-control-1:checked ~ .st-scroll {
+#slide-control-1:checked ~ .slide-scroll {
 	-webkit-transform: translateY(0%);
 	-moz-transform: translateY(0%);
 	-o-transform: translateY(0%);
 	-ms-transform: translateY(0%);
 	transform: translateY(0%);
 }
-#st-control-2:checked ~ .st-scroll {
+#slide-control-2:checked ~ .slide-scroll {
 	-webkit-transform: translateY(-100%);
 	-moz-transform: translateY(-100%);
 	-o-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
-#st-control-3:checked ~ .st-scroll {
+#slide-control-3:checked ~ .slide-scroll {
 	-webkit-transform: translateY(-200%);
 	-moz-transform: translateY(-200%);
 	-o-transform: translateY(-200%);
 	-ms-transform: translateY(-200%);
 	transform: translateY(-200%);
 }
-#st-control-4:checked ~ .st-scroll {
+#slide-control-4:checked ~ .slide-scroll {
 	-webkit-transform: translateY(-300%);
 	-moz-transform: translateY(-300%);
 	-o-transform: translateY(-300%);
 	-ms-transform: translateY(-300%);
 	transform: translateY(-300%);
 }
-#st-control-5:checked ~ .st-scroll {
+#slide-control-5:checked ~ .slide-scroll {
 	-webkit-transform: translateY(-400%);
 	-moz-transform: translateY(-400%);
 	-o-transform: translateY(-400%);
@@ -169,7 +169,7 @@ a {
 
 /* Content elements */
 
-.st-deco{
+.slide-deco{
 	width: 200px;
 	height: 200px;
 	position: absolute;
@@ -205,7 +205,7 @@ a {
 	transform: rotate(-45deg) translateY(25%);
 }
 
-.st-panel h2 {
+.slide-panel h2 {
 	color: #26539b;
 	text-shadow: 1px 1px 1px rgba(23,51,96,0.2);
 	position: absolute;
@@ -221,7 +221,7 @@ a {
 	-webkit-backface-visibility: hidden;
 }
 
-.st-panel h3 {
+.slide-panel h3 {
 	color: #ccc;
 	text-shadow: 1px 1px 1px rgba(23,51,96,0.2);
 	position: absolute;
@@ -237,11 +237,11 @@ a {
 	-webkit-backface-visibility: hidden;
 }
 
-#st-control-1:checked ~ .st-scroll #st-panel-1 h2,
-#st-control-2:checked ~ .st-scroll #st-panel-2 h2,
-#st-control-3:checked ~ .st-scroll #st-panel-3 h2,
-#st-control-4:checked ~ .st-scroll #st-panel-4 h2,
-#st-control-5:checked ~ .st-scroll #st-panel-5 h2{
+#slide-control-1:checked ~ .slide-scroll #slide-panel-1 h2,
+#slide-control-2:checked ~ .slide-scroll #slide-panel-2 h2,
+#slide-control-3:checked ~ .slide-scroll #slide-panel-3 h2,
+#slide-control-4:checked ~ .slide-scroll #slide-panel-4 h2,
+#slide-control-5:checked ~ .slide-scroll #slide-panel-5 h2{
 	-webkit-animation: moveDown 0.6s ease-in-out 0.2s backwards;
 	-moz-animation: moveDown 0.6s ease-in-out 0.2s backwards;
 	-o-animation: moveDown 0.6s ease-in-out 0.2s backwards;
@@ -303,7 +303,7 @@ a {
 	}
 }
 
-.st-panel p {
+.slide-panel p {
 	position: absolute;
 	text-align: center;
 	font-size: 16px;
@@ -317,11 +317,11 @@ a {
 	margin: 10px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
-#st-control-1:checked ~ .st-scroll #st-panel-1 h3,
-#st-control-2:checked ~ .st-scroll #st-panel-2 p,
-#st-control-3:checked ~ .st-scroll #st-panel-3 p,
-#st-control-4:checked ~ .st-scroll #st-panel-4 p,
-#st-control-5:checked ~ .st-scroll #st-panel-5 form{
+#slide-control-1:checked ~ .slide-scroll #slide-panel-1 h3,
+#slide-control-2:checked ~ .slide-scroll #slide-panel-2 p,
+#slide-control-3:checked ~ .slide-scroll #slide-panel-3 p,
+#slide-control-4:checked ~ .slide-scroll #slide-panel-4 p,
+#slide-control-5:checked ~ .slide-scroll #slide-panel-5 form{
 	-webkit-animation: moveUp 0.6s ease-in-out 0.2s backwards;
 	-moz-animation: moveUp 0.6s ease-in-out 0.2s backwards;
 	-o-animation: moveUp 0.6s ease-in-out 0.2s backwards;
@@ -384,7 +384,7 @@ a {
 	}
 }
 
-.st-panel form {
+.slide-panel form {
   position: absolute;
 	text-align: center;
 	font-size: 16px;
@@ -424,47 +424,47 @@ a {
 
 /* Colored sections */
 
-.st-color,
-.st-deco{
+.slide-color,
+.slide-deco{
 	background: #26539b;
 }
-.st-color [data-icon]:after {
+.slide-color [data-icon]:after {
 	color: #26539b;
 }
-.st-color .st-deco {
+.slide-color .slide-deco {
 	background: #7c7c7c;
 }
-.st-color h2 {
+.slide-color h2 {
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
-.st-color p {
+.slide-color p {
 	color: #fff;
 	color: rgba(255,255,255,0.8);
 }
 
 @media screen and (max-width: 520px) {
-	.st-panel h2 {
+	.slide-panel h2 {
 		font-size: 42px;
 	}
 
-	.st-panel p {
+	.slide-panel p {
 		width: 90%;
 		left: 5%;
 		margin-top: 0;
 	}
 
-	.st-container > a {
+	.slide-container > a {
 		font-size: 13px;
 	}
 }
 
 @media screen and (max-width: 360px) {
-	.st-container > a {
+	.slide-container > a {
 		font-size: 10px;
 	}
 
-	.st-deco{
+	.slide-deco{
 		width: 120px;
 		height: 120px;
 		margin-left: -60px;
