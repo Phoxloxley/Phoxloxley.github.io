@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1f7cd582a3.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,64 +20,69 @@
 
     <div class="container">
 
-        <div class="st-container">
+        <div class="slide-container">
 
-            <input type="radio" name="radio-set" checked="checked" id="st-control-1" />
-            <a href="#st-panel-1">Home</a>
-            <input type="radio" name="radio-set" id="st-control-2" />
-            <a href="#st-panel-2">About</a>
-            <input type="radio" name="radio-set" id="st-control-3" />
-            <a href="#st-panel-3">Illustrations</a>
-            <input type="radio" name="radio-set" id="st-control-4" />
-            <a href="#st-panel-4">Front End</a>
-            <input type="radio" name="radio-set" id="st-control-5" />
-            <a href="#st-panel-5">Contact Me</a>
+            <input type="radio" name="radio-set" checked="checked" id="slide-control-1" />
+            <a href="#slide-panel-1">Home</a>
+            <input type="radio" name="radio-set" id="slide-control-2" />
+            <a href="#slide-panel-2">About</a>
+            <input type="radio" name="radio-set" id="slide-control-3" />
+            <a href="#slide-panel-3">Illusliderations</a>
+            <input type="radio" name="radio-set" id="slide-control-4" />
+            <a href="#slide-panel-4">Front End</a>
+            <input type="radio" name="radio-set" id="slide-control-5" />
+            <a href="#slide-panel-5">Contact Me</a>
 
-            <div class="st-scroll">
+            <div class="slide-scroll">
 
-                <section class="st-panel" id="st-panel-1">
-                    <div class="st-deco" data-icon="&#xf015;"></div>
-                    <h2>Home</h2>
-                    <p>
-                        Image Slide Show - Coming Soon.
-                    </p>
+                <section class="slide-panel" id="slide-panel-1">
+                    <div class="slide-deco" data-icon="&#xf015;"></div>
+                    <h2>Phoxfire Loxley</h2>
+                    <h3>Illustrator and Front End Dev</h3>
                 </section> <!-- end Home section -->
 
-                <section class="st-panel" id="st-panel-2">
-                    <div class="st-deco" data-icon="&#xf2c1;"></div>
+                <section class="slide-panel" id="slide-panel-2">
+                    <div class="slide-deco" data-icon="&#xf2c1;"></div>
                     <h2>About</h2>
-                    <p>
-                        Blurp about me coming soon.
-                    </p>
+                    <p>Blurp about me coming soon.</p>
                 </section> <!-- end About section -->
 
-                <section class="st-panel" id="st-panel-3">
-                    <div class="st-deco" data-icon="&#xf1fc;"></div>
+                <section class="slide-panel" id="slide-panel-3">
+                    <div class="slide-deco" data-icon="&#xf1fc;"></div>
                     <h2>Illustrations</h2>
-                    <p>
-                        Image Gallery coming soon.
-                    </p>
+                    <p>Image Gallery coming soon.</p>
                 </section> <!-- end Illustrations section -->
 
-                <section class="st-panel" id="st-panel-4">
-                    <div class="st-deco" data-icon="&#xf108;"></div>
+                <section class="slide-panel" id="slide-panel-4">
+                    <div class="slide-deco" data-icon="&#xf108;"></div>
                     <h2>Front End Development</h2>
-                    <p>
-                        Examples of Front End Development Coming Soon.
-                    </p>
+                    <p>Examples of Front End Development Coming Soon.</p>
                 </section> <!-- end Front End section -->
 
-                <section class="st-panel" id="st-panel-5">
-                    <div class="st-deco" data-icon="&#xf003;"></div>
+                <section class="slide-panel" id="slide-panel-5">
+                    <div class="slide-deco" data-icon="&#xf003;"></div>
                     <h2>Contact Me</h2>
-                    <p>
-                        Contact Form and Social Icons coming soon.
-                    </p>
+                    <form id="contact-form">
+                      <div class="form-line">
+                        <label for="name"><i class="fa fa-user-circle"></i></label>
+                        <input type="text" name="name" placeholder=" Your Name" />
+                      </div>
+                      <div class="form-line">
+                        <label for="email"><i class="fa fa-envelope-o"></i></label>
+                        <input type="email" name="email" placeholder=" Your Email" />
+                      </div>
+                      <div class="form-line">
+                        <textarea rows="4" cols="20" form="#contact-form" placeholder=" Why are you contacting me?"></textarea>
+                      </div>
+                      <div class="form-line">
+                        <button type="submit">Submit</button>
+                      </div>
+                    </form>
                 </section>
 
-            </div> <!-- end .st-scroll -->
+            </div> <!-- end .slide-scroll -->
 
-        </div> <!-- end .st-container -->
+        </div> <!-- end .slide-container -->
 
     </div> <!-- end .container -->
 

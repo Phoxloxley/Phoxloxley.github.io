@@ -1,0 +1,40 @@
+@import url('//fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+a {
+    text-decoration: none;
+}
+.slide-container {
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+}
+.slide-container > input,
+.slide-container > a {
+    font-size: 16px;
+}
+.slide-container > a {
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(23,51,96.0.2);
+}
+[data-icon]:after {
+    font-family: 'FontAwesome';
+    text-shadow: 1px 1px 1px rgba(23,51,96,0.2);
+    text-align: center;
+    font-size: 90px;
+}
+.slide-panel h2,
+.slide-panel h3 {
+    text-shadow: 1px 1px 1px rgba(23,51,96,0.2);
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+.slide-panel p,
+.slide-panel form {
+    text-align: center;
+    font-size: 16px;
+}
+.form-line > label > i {
+    font-size: 24px;
+}
+.form-line > button {
+    text-align: center;
+}
