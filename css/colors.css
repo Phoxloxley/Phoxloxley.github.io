@@ -8,8 +8,12 @@ body {
 .st-container::before {
     background: #26539b;
 }
-.st-container > input:checked + a::after,
+.st-container > input:checked + a,
 .st-container > input:checked:hover + a {
+    background: #26539b;
+}
+.st-container > input:checked + a::after,
+.st-container > input:checked:hover + a::after {
     border-bottom-color: #26539b;
 }
 .st-container > input:hover + a {
