@@ -3,7 +3,11 @@
 
     <div id="sidebar" :class="changeSidebarWidth">
 
-      <button type="button" id="toggle" class="btn" :class="changeSidebarButtonPosition" @click="toggleSidebar">
+      <button type="button"
+              id="toggle"
+              class="btn"
+              :class="changeSidebarButtonPosition"
+              @click="toggleSidebar">
         <i class="fa" :class="flipChevron"></i>
       </button>
 
