@@ -74,13 +74,26 @@ export default {
 </script>
 
 <style lang="scss">
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+}
 body {
   background-color: #232645;
+}
+#__layout {
   > div {
     display: table;
+    height: 100%;
   }
 }
 #sidebar {
   display: table-cell;
+  height: 100%;
+  background-color: #444;
+  transition: all 0.3s;
+  box-shadow: 6px 5px 10px -7px #000;
 }
 </style>
