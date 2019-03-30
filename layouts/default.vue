@@ -1,55 +1,86 @@
 <template>
   <div>
+    <div id="sidebar">
+      <button
+        id="toggle"
+        type="button"
+        class="btn"
+        :class="changeSidebarButtonPosition"
+        @click="toggleSidebar"
+      >
+        <i class="fa" :class="flipChevron"></i>
+      </button>
+    </div>
+
     <nuxt />
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css',
+          integrity:
+            'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf',
+          crossorigin: 'anonymous'
+        }
+      ]
+    }
+  },
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+  data() {
+    return {
+      isOpen: true
+    }
+  },
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+  computed: {
+    changeSidebarWidth: function() {
+      return {
+        closed: !this.isOpen,
+        open: this.isOpen
+      }
+    },
+    changeSidebarButtonPosition: function() {
+      return {
+        collapsed: !this.isOpen,
+        uncollapsed: this.isOpen
+      }
+    },
+    flipChevron: function() {
+      return {
+        'fa-chevron-right': !this.isOpen,
+        'fa-chevron-left': this.isOpen
+      }
+    },
+    hideText: function() {
+      return {
+        hidden: !this.isOpen,
+        shown: this.isOpen
+      }
+    }
+  },
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+  methods: {
+    toggleSidebar: function() {
+      this.isOpen = !this.isOpen
+    }
+  }
 }
+</script>
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+<style lang="scss">
+body {
+  background-color: #232645;
+  > div {
+    display: table;
+  }
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+#sidebar {
+  display: table-cell;
 }
 </style>
