@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div id="sidebar">
+    <div id="sidebar" :class="changeSidebarWidth">
       <button
         id="toggle"
         type="button"
-        class="btn"
+        class="btn py-2 px-2"
         :class="changeSidebarButtonPosition"
         @click="toggleSidebar"
       >
@@ -95,5 +95,28 @@ body {
   background-color: #444;
   transition: all 0.3s;
   box-shadow: 6px 5px 10px -7px #000;
+  #toggle {
+    position: absolute;
+    top: 0;
+    height: 89px;
+    border-radius: 0 8px 8px 0;
+    background-color: #444;
+    color: #232645;
+    transition: all 0.3s;
+    box-shadow: 5px 5px 10px -7px #000;
+    z-index: 3;
+  }
+  #toggle.collapsed {
+    left: 0px;
+  }
+  #toggle.uncollapsed {
+    left: 256px;
+  }
+}
+#sidebar.closed {
+  width: 0px;
+}
+#sidebar.open {
+  width: 256px;
 }
 </style>
