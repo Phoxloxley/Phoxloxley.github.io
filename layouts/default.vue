@@ -1,7 +1,9 @@
 <template>
   <div>
     <top-bar />
-    <nuxt />
+    <div id="pageContent">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -41,6 +43,12 @@ body {
 #__layout {
   > div {
     width: 100%;
+    display: table;
   }
+}
+#pageContent {
+  display: table-row;
+  height: 100%;
+  width: 100%;
 }
 </style>
