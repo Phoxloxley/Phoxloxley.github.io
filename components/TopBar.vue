@@ -6,7 +6,7 @@
 
     <div class="topbar-info">
       <img
-        src="~/assets/images/Twitch_Logo.png"
+        src="../assets/images/Twitch_Logo.png"
         class="topbar-logo"
         title="Phoxfire Logo"
         alt="logo"
