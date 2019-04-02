@@ -35,7 +35,7 @@ body,
   height: 100%;
 }
 body {
-  background-image: url('../assets/Images/bg-image.png');
+  background-image: url('~assets/Images/bg-image.png');
   background-size: cover;
   background-color: #232645;
 }
