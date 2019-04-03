@@ -1,14 +1,10 @@
 import Vue from 'vue'
-import {
-  compile
-} from '../utils'
+import { compile } from '../utils'
 
 import NuxtError from './nuxt-error.vue'
 
 import NuxtChild from './nuxt-child'
 
-import LoadScript from 'vue-plugin-load-script'
-Vue.use(LoadScript);
 export default {
   name: 'Nuxt',
   components: {
