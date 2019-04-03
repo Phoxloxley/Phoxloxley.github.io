@@ -17,6 +17,7 @@
     <div class="topbar-nav">
       <nav>
         <nuxt-link to="/"><i class="fa fa-home"></i>Home</nuxt-link>
+        <nuxt-link to="/twitch"> <i class="fab fa-twitch"></i>Twitch</nuxt-link>
         <nuxt-link to="/contact">
           <i class="fa fa-envelope"></i>Contact Me
         </nuxt-link>
