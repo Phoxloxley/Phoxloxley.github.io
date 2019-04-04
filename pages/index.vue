@@ -5,14 +5,14 @@
     <div class="container home-content">
       <div class="info-text">
         <p class="mb-5">
-          I am a 38yo husband and father, from Southeastern Virginia. I am been
-          drawing since I was in grade school, coding for about 10 years, and
-          gaming all my life. I learned how to code websites in the U.S. Army,
-          and never looked back.
+          I am a 38yo husband and father, from Southeastern Virginia. I have
+          been drawing since I was in grade school, coding for about 10 years,
+          and gaming all my life. I learned how to code websites in the U.S.
+          Army, and never looked back.
         </p>
         <p>
           I currently work as an UI Engineer for Trader Interactive. I am
-          currently working to expand my knowledge base to leverage frameworks
+          currently striving to expand my knowledge base to leverage frameworks
           such as Vue.js and Nuxt.js. In fact, this site was built using both. I
           enjoy learning and improving my skills.
         </p>
