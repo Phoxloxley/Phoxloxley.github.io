@@ -2,7 +2,7 @@
   <div class="container center-content">
     <h2 class="text-left mb-5">
       Follow Me on <i class="fab fa-twitch mr-2 ml-2"></i>
-      <a href="twitch.tv/phoxloxley">Twitch.tv!</a>
+      <a href="https://twitch.tv/phoxloxley">Twitch.tv!</a>
     </h2>
     <vue-twitch-player
       :channel="channel"
