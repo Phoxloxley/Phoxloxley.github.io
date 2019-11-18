@@ -1,9 +1,5 @@
 <template>
   <div id="Topbar" :class="changeTopbarState">
-    <button id="toggle" type="button" class="btn" @click="toggleTopbar">
-      <i class="fa" :class="flipChevron"></i>
-    </button>
-
     <div class="topbar-info">
       <img
         src="~/static/Twitch_Logo.png"
@@ -30,34 +26,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      isOpen: true
-    }
-  },
-
-  computed: {
-    changeTopbarState: function() {
-      return {
-        closed: !this.isOpen,
-        open: this.isOpen
-      }
-    },
-    flipChevron: function() {
-      return {
-        'fa-chevron-down': !this.isOpen,
-        'fa-chevron-up': this.isOpen
-      }
-    }
-  },
-
-  methods: {
-    toggleTopbar: function() {
-      this.isOpen = !this.isOpen
-    }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -65,25 +34,10 @@ export default {
   display: table-row;
   position: relative;
   width: 100%;
+  height: 4rem;
   background-color: #000;
   transition: all 0.3s;
   box-shadow: 6px 5px 10px -7px #000;
-  #toggle {
-    position: absolute;
-    top: 56px;
-    right: 0;
-    height: 49px;
-    width: auto;
-    border-radius: 0 0 8px 8px;
-    background-color: #000;
-    color: #232645;
-    transition: all 0.2s;
-    box-shadow: 5px 5px 10px -7px #000;
-    z-index: 3;
-    &:hover {
-      color: #ff5733;
-    }
-  }
   .topbar-info {
     position: relative;
     float: left;
@@ -120,13 +74,5 @@ export default {
       }
     }
   }
-}
-#Topbar.closed {
-  height: 0;
-  top: -56px;
-}
-#Topbar.open {
-  height: 56px;
-  top: 0;
 }
 </style>
